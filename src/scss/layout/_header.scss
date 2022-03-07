@@ -1,5 +1,236 @@
-.page__header {
+/* HEADER - NAV - HERO */
+/** NAV **/
+.nav {
+  height: 80rem;
+  padding: 0 16rem;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--black);
 }
+
+.logo {
+  width: 150rem;
+  height: 60rem;
+
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.menu-nav-hamburguer {
+  width: 40rem;
+  height: 40rem;
+  text-align: center;
+  font-size: 30rem;
+  line-height: 40rem;
+}
+
+.menu-nav-hamburguer:hover {
+  cursor: pointer;
+}
+
+.nav > ul {
+  display: none;
+}
+
+.nav > ul > li {
+  padding: 0 10rem;
+}
+
+.nav > ul > li:last-child {
+  padding-right: 0;
+}
+
+.nav > ul > li:hover {
+  cursor: pointer;
+}
+/** END OF NAV **/
+
+/** HERO **/
+.hero {
+  padding: 16rem;
+  height: 50vh;
+  min-height: 380rem;
+  display: block;
+  color: var(--white);
+  background-color: var(--azulSpotify);
+}
+
+.hero > h1 {
+  max-width: 400rem;
+  padding-top: 14%;
+
+  font-size: 35rem;
+  font-weight: var(--boldBlack);
+  letter-spacing: 1rem;
+  line-height: 50rem;
+}
+
+.hero > .p1 {
+  max-width: 400rem;
+  padding-top: 15rem;
+
+  font-size: 16rem;
+  font-weight: var(--bold);
+  letter-spacing: 1.5rem;
+  line-height: 28rem;
+}
+
+.buttom {
+  width: 100%;
+  height: 40rem;
+  margin: 20rem 0 30rem 0;
+  text-align: center;
+  font-size: 12rem;
+  font-weight: var(--bold);
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  line-height: 40rem;
+  color: var(--white);
+  border-radius: 20rem;
+  border: none;
+  background-color: var(--verdeSpotify);
+}
+
+.buttom:hover {
+  background-color: var(--verdeSpotifyHover);
+  cursor: pointer;
+}
+
+.hero > .p2 {
+  font-size: 10rem;
+  font-weight: var(--regular);
+  line-height: 16rem;
+}
+/** END OF HERO **/
+/* END OF HEADER - NAV - HERO */
+
+/*  */
+/*  */
+/*  */
+/* TABLET */
+@media all and (min-width: 480px) {
+  /* END OF HEADER - NAV - HERO */
+  /** NAV **/
+
+  .nav {
+    height: 80rem;
+    padding: 0 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  .logo {
+    width: 150rem;
+    min-width: 150rem;
+    height: 60rem;
+
+    background-image: url(../images//logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .menu-nav-hamburguer {
+    display: none;
+  }
+
+  .nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav > ul > li > a {
+    font-size: 16rem;
+    line-height: 25rem;
+  }
+  /** END OF NAV **/
+  /** HERO **/
+  .hero {
+    padding: 16rem;
+    height: 50vh;
+    min-height: 380rem;
+    display: block;
+    color: var(--white);
+    background-color: var(--azulSpotify);
+    background-image: url(../images//premium_dancer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+  }
+
+  .hero > h1 {
+    max-width: 100%;
+    padding-top: 12%;
+    font-size: 40rem;
+    line-height: 50rem;
+  }
+
+  .hero > .p1 {
+    max-width: 100%;
+
+    font-size: 22rem;
+    line-height: 32rem;
+  }
+
+  .buttom {
+    width: 180rem;
+  }
+
+  .hero > .p2 {
+    max-width: 70%;
+  }
+
+  /** END OF HERO **/
+  /* END OF HEADER - NAV - HERO */
+}
+/* END OF TABLET */
+/*  */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+/* DESKTOP */
+@media all and (min-width: 1000px) {
+  /* END OF HEADER - NAV - HERO */
+  /** HERO **/
+  .hero {
+    padding: 16rem;
+    height: 50vh;
+    min-height: 400rem;
+    display: block;
+    color: var(--white);
+    background-color: var(--azulSpotify);
+    background-image: url(../images//premium_dancer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+  }
+
+  .hero > h1 {
+    max-width: 70%;
+  }
+
+  .hero > .p1 {
+    max-width: 70%;
+  }
+
+  .hero > .p2 {
+    max-width: 70%;
+  }
+
+  /** END OF HERO **/
+  /* END OF HEADER - NAV - HERO */
+}
+/* END OF DESKTOP */
