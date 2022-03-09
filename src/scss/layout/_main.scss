@@ -1,13 +1,13 @@
 /* MAIN */
 .main {
   padding: 16rem;
-  color: var(--blackParagraph);
+  color: $blackParagraph;
 }
 
 .main > h2 {
   margin: 15rem 0 25rem 0;
   font-size: 30rem;
-  font-weight: var(--bold);
+  font-weight: $bold;
   line-height: 35rem;
   text-align: center;
 }
@@ -17,6 +17,7 @@
   padding: 16rem;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -38,6 +39,7 @@
 
 .article > .icon {
   flex-basis: 25%;
+  max-width: 250rem;
   height: 80rem;
   background-repeat: no-repeat;
   background-size: contain;
@@ -52,13 +54,13 @@
 .text-container > h3 {
   margin-bottom: 10rem;
   font-size: 16rem;
-  font-weight: var(--bold);
+  font-weight: $bold;
   line-height: 24rem;
 }
 
 .text-container > p {
   font-size: 14rem;
-  font-weight: var(--regular);
+  font-weight: $regular;
   line-height: 20rem;
 }
 
@@ -131,13 +133,13 @@
   .text-container > h3 {
     margin-bottom: 10rem;
     font-size: 16rem;
-    font-weight: var(--bold);
+    font-weight: $bold;
     line-height: 24rem;
   }
 
   .text-container > p {
     font-size: 14rem;
-    font-weight: var(--regular);
+    font-weight: $regular;
     line-height: 20rem;
   }
 

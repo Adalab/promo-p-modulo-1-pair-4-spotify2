@@ -6,33 +6,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--white);
-  background-color: var(--black);
+  color: $white;
+  background-color: $black;
+
+  &__logo {
+    width: 150rem;
+    height: 60rem;
+
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media all and (min-width: 480px) {
+      min-width: 150rem;
+    }
+  }
+
+  &__hamburguer {
+    width: 40rem;
+    height: 40rem;
+    text-align: center;
+    font-size: 30rem;
+    line-height: 40rem;
+    &__hamburguer:hover {
+      cursor: pointer;
+    }
+
+    @media all and (min-width: 480px) {
+      display: none;
+    }
+  }
 }
 
-.logo {
-  width: 150rem;
-  height: 60rem;
-
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.menu-nav-hamburguer {
-  width: 40rem;
-  height: 40rem;
-  text-align: center;
-  font-size: 30rem;
-  line-height: 40rem;
-}
-
-.menu-nav-hamburguer:hover {
-  cursor: pointer;
-}
-
-.nav > ul {
+.nav ul {
   display: none;
 }
 
@@ -55,8 +62,8 @@
   height: 50vh;
   min-height: 380rem;
   display: block;
-  color: var(--white);
-  background-color: var(--azulSpotify);
+  color: $white;
+  background-color: $azulSpotify;
 }
 
 .hero > h1 {
@@ -64,7 +71,7 @@
   padding-top: 14%;
 
   font-size: 35rem;
-  font-weight: var(--boldBlack);
+  font-weight: $boldBlack;
   letter-spacing: 1rem;
   line-height: 50rem;
 }
@@ -74,7 +81,7 @@
   padding-top: 15rem;
 
   font-size: 16rem;
-  font-weight: var(--bold);
+  font-weight: $bold;
   letter-spacing: 1.5rem;
   line-height: 28rem;
 }
@@ -85,24 +92,24 @@
   margin: 20rem 0 30rem 0;
   text-align: center;
   font-size: 12rem;
-  font-weight: var(--bold);
+  font-weight: $bold;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
   line-height: 40rem;
-  color: var(--white);
+  color: $white;
   border-radius: 20rem;
   border: none;
-  background-color: var(--verdeSpotify);
+  background-color: $verdeSpotify;
 }
 
 .buttom:hover {
-  background-color: var(--verdeSpotifyHover);
+  background-color: $verdeSpotifyHover;
   cursor: pointer;
 }
 
 .hero > .p2 {
   font-size: 10rem;
-  font-weight: var(--regular);
+  font-weight: $regular;
   line-height: 16rem;
 }
 /** END OF HERO **/
@@ -115,31 +122,6 @@
 @media all and (min-width: 480px) {
   /* END OF HEADER - NAV - HERO */
   /** NAV **/
-
-  .nav {
-    height: 80rem;
-    padding: 0 16rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--white);
-    background-color: var(--black);
-  }
-
-  .logo {
-    width: 150rem;
-    min-width: 150rem;
-    height: 60rem;
-
-    background-image: url(../images//logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .menu-nav-hamburguer {
-    display: none;
-  }
 
   .nav > ul {
     display: flex;
@@ -160,8 +142,8 @@
     height: 50vh;
     min-height: 380rem;
     display: block;
-    color: var(--white);
-    background-color: var(--azulSpotify);
+    color: $white;
+    background-color: $azulSpotify;
     background-image: url(../images//premium_dancer.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -210,8 +192,8 @@
     height: 50vh;
     min-height: 400rem;
     display: block;
-    color: var(--white);
-    background-color: var(--azulSpotify);
+    color: $white;
+    background-color: $azulSpotify;
     background-image: url(../images//premium_dancer.png);
     background-repeat: no-repeat;
     background-size: contain;
